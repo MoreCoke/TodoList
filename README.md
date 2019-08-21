@@ -1,4 +1,4 @@
-<h1 align="center"># 嗨 歡迎來到我的Github</h1>
+<h1 align="center">嗨 歡迎來到我的Github</h1>
 
 [![TodoList](stylesheet/img/screenshot.png)](https://morecoke.github.io/TodoList/)
 
