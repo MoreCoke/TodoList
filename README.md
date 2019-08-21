@@ -1,4 +1,4 @@
-<center># 嗨 歡迎來到我的Github</center>
+<h1 align="center"># 嗨 歡迎來到我的Github</h1>
 
 [![TodoList](stylesheet/img/screenshot.png)](https://morecoke.github.io/TodoList/)
 
@@ -36,4 +36,4 @@
 
 ***
 
-### 大概是這樣，這個小東西花了我大約48小時，真正寫code的時間可能不到四小時，剩下的時間都在學新技巧和DEBUG(還有平復抓不到BUG煩躁的心情?)，希望下次練習能更快完成、更進入狀況!!
+大概是這樣，這個小東西花了我大約48小時，真正寫code的時間可能不到四小時，剩下的時間都在學新技巧和DEBUG(還有平復抓不到BUG煩躁的心情?)，希望下次練習能更快完成、更進入狀況!!
