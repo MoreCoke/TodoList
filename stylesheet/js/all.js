@@ -133,7 +133,7 @@ function editMatter(e) {
 function updateList() {
     str = "";
     for (var i = 0; i < data.length; i++) {
-        str += '<li class="list-item-' + data[i].matterLight + '"><span data-nums=' + i + '>' + data[i].matter + '</span><div class="float-right"><i class="fas fa-check check" data-nums=' + i + '></i><i class="fas fa-trash delete" data-nums=' + i + '></i></div ></li >'
+        str += '<li class="list-item list-item-' + data[i].matterLight + '"><span data-nums=' + i + '>' + data[i].matter + '</span><div class="float-right"><i class="fas fa-check check" data-nums=' + i + '></i><i class="fas fa-trash delete" data-nums=' + i + '></i></div ></li >'
     }
     if (str != "") {
         list.innerHTML = str;

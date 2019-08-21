@@ -48,6 +48,114 @@ table {
   border-spacing: 0;
 }
 
+.primary {
+  background-color: #353332;
+}
+
+.primary:hover, .primary:checked {
+  background-color: #5D5857;
+  -webkit-box-shadow: 0 0 0.5rem #5D5857;
+          box-shadow: 0 0 0.5rem #5D5857;
+}
+
+.text-primary {
+  color: #5D5857;
+}
+
+.list-item-primary {
+  border-left: 0.4rem solid #433f3e;
+}
+
+.info {
+  background-color: #1d6fa5;
+}
+
+.info:hover, .info:checked {
+  background-color: #3498db;
+  -webkit-box-shadow: 0 0 0.5rem #3498db;
+          box-shadow: 0 0 0.5rem #3498db;
+}
+
+.text-info {
+  color: #3498db;
+}
+
+.list-item-info {
+  border-left: 0.4rem solid #217dbb;
+}
+
+.crucial {
+  background-color: #a51b04;
+}
+
+.crucial:hover, .crucial:checked {
+  background-color: #f02706;
+  -webkit-box-shadow: 0 0 0.5rem #f02706;
+          box-shadow: 0 0 0.5rem #f02706;
+}
+
+.text-crucial {
+  color: #f02706;
+}
+
+.list-item-crucial {
+  border-left: 0.4rem solid #be1f05;
+}
+
+.necessary {
+  background-color: #afaf00;
+}
+
+.necessary:hover, .necessary:checked {
+  background-color: #fbfb00;
+  -webkit-box-shadow: 0 0 0.5rem #fbfb00;
+          box-shadow: 0 0 0.5rem #fbfb00;
+}
+
+.text-necessary {
+  color: #fbfb00;
+}
+
+.list-item-necessary {
+  border-left: 0.4rem solid #c8c800;
+}
+
+.trivial {
+  background-color: #20af00;
+}
+
+.trivial:hover, .trivial:checked {
+  background-color: #2efb00;
+  -webkit-box-shadow: 0 0 0.5rem #2efb00;
+          box-shadow: 0 0 0.5rem #2efb00;
+}
+
+.text-trivial {
+  color: #2efb00;
+}
+
+.list-item-trivial {
+  border-left: 0.4rem solid #25c800;
+}
+
+.awesome {
+  background-color: #0d0d0d;
+}
+
+.awesome:hover, .awesome:checked {
+  background-color: #333;
+  -webkit-box-shadow: 0 0 0.5rem #333;
+          box-shadow: 0 0 0.5rem #333;
+}
+
+.text-awesome {
+  color: #333;
+}
+
+.list-item-awesome {
+  border-left: 0.4rem solid #1a1a1a;
+}
+
 html {
   height: 100%;
 }
@@ -136,6 +244,19 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.25rem auto;
 }
 
+.matter .matter-level input {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0 0.5rem;
+  border-radius: 100%;
+  border-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
 .matter .matter-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,75 +329,6 @@ h1, h2, h3, h4, h5, h6 {
 .matter label i {
   font-size: 1.5rem;
   cursor: pointer;
-}
-
-.crucial,
-.necessary,
-.trivial {
-  width: 4.5rem;
-  height: 4.5rem;
-  margin: 0 0.5rem;
-  border-radius: 100%;
-  border-color: transparent;
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  cursor: pointer;
-}
-
-.crucial {
-  background-color: #a51b04;
-}
-
-.crucial:hover, .crucial:checked {
-  background-color: #f02706;
-  -webkit-box-shadow: 0 0 0.5rem #f02706;
-          box-shadow: 0 0 0.5rem #f02706;
-}
-
-.necessary {
-  background-color: #afaf00;
-}
-
-.necessary:hover, .necessary:checked {
-  background-color: #fbfb00;
-  -webkit-box-shadow: 0 0 0.5rem #fbfb00;
-          box-shadow: 0 0 0.5rem #fbfb00;
-}
-
-.trivial {
-  background-color: #20af00;
-}
-
-.trivial:hover, .trivial:checked {
-  background-color: #2efb00;
-  -webkit-box-shadow: 0 0 0.5rem #2efb00;
-          box-shadow: 0 0 0.5rem #2efb00;
-}
-
-.text-crucial {
-  color: #f02706;
-}
-
-.text-necessary {
-  color: #fbfb00;
-}
-
-.text-trivial {
-  color: #2efb00;
-}
-
-.bg-crucial {
-  background-color: #f02706;
-}
-
-.bg-necessary {
-  background-color: #fbfb00;
-}
-
-.bg-trivial {
-  background-color: #2efb00;
 }
 
 .title {
@@ -417,7 +469,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #5faee3;
 }
 
-.list-item-crucial, .list-item-necessary, .list-item-trivial {
+.list-item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: bolder;
@@ -425,21 +477,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0.5rem;
 }
 
-.list-item-crucial:hover, .list-item-necessary:hover, .list-item-trivial:hover {
+.list-item:hover {
   -webkit-box-shadow: 0 0.35rem 1.75rem rgba(0, 0, 0, 0.125);
           box-shadow: 0 0.35rem 1.75rem rgba(0, 0, 0, 0.125);
 }
 
-.list-item-crucial {
-  border-left: 0.4rem solid #be1f05;
-}
-
-.list-item-necessary {
-  border-left: 0.4rem solid #c8c800;
-}
-
-.list-item-trivial {
-  border-left: 0.4rem solid #25c800;
+.list-item-content {
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0;
+  outline: none;
+  height: 1rem;
 }
 
 .list-button {
@@ -464,14 +513,5 @@ h1, h2, h3, h4, h5, h6 {
 .list-text {
   font-size: 2.5rem;
   margin: 1rem 0;
-}
-
-.list-item-content {
-  color: white;
-  font-size: 1rem;
-  font-weight: bolder;
-  padding: 0;
-  outline: none;
-  height: 1rem;
 }
 /*# sourceMappingURL=all.css.map */

@@ -4,3 +4,29 @@ $crucial:#f02706;
 $necessary:#fbfb00;
 $trivial:#2efb00;
 $awesome:#333;
+
+$color:(
+    "primary":#5D5857,
+    "info":#3498db,
+    "crucial":#f02706,
+    "necessary":#fbfb00,
+    "trivial":#2efb00,
+    "awesome":#333
+);
+@each $name,$value in $color {
+    .#{$name} {
+        background-color:darken($value,15%);
+        &:hover,&:checked{
+            background-color: $value;
+            box-shadow: 0 0 .5rem $value;
+        }
+    }
+
+    .text-#{$name}{
+        color:$value;
+    }
+
+    .list-item-#{$name}{
+        border-left: 0.4rem solid darken($value,10%);
+    }
+}

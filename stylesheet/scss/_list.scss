@@ -20,7 +20,7 @@
     background: lighten($info, 10%);
   }
 }
-.list-item-crucial,.list-item-necessary,.list-item-trivial{
+.list-item{
   box-sizing: border-box;
   font-weight: bolder;
   margin: 1.5rem 2rem;
@@ -29,16 +29,13 @@
     box-shadow: 0 0.35rem 1.75rem rgba(black, 0.125);
   }
 }
-
-.list-item-crucial {
-  border-left: 0.4rem solid darken($crucial, 10%);
-  
-}
-.list-item-necessary {
-  border-left: 0.4rem solid darken($necessary, 10%);
-}
-.list-item-trivial {
-  border-left: 0.4rem solid darken($trivial, 10%);
+.list-item-content{
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0;
+  outline: none;
+  height: 1rem;
 }
 .list-button {
   box-sizing: border-box;
@@ -59,12 +56,4 @@
 .list-text {
   font-size: 2.5rem;
   margin: 1rem 0;
-}
-.list-item-content{
-  color: white;
-  font-size: 1rem;
-  font-weight: bolder;
-  padding: 0;
-  outline: none;
-  height: 1rem;
 }
