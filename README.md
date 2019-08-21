@@ -2,7 +2,7 @@
 
 [![TodoList](stylesheet/img/screenshot.png)](https://morecoke.github.io/TodoList/)
 
-### 這次嘗試做了一個簡單的TodoList，其中主要設計、練習有:
+## 這次嘗試做了一個簡單的TodoList，其中主要設計、練習有:
 1. 響應式設計，嘗試手刻不用bootstrap
 2. Scss函式練習
 3. css的內建動畫特效
