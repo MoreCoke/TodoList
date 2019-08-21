@@ -1,0 +1,9 @@
+@mixin head-font{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+@mixin body-font{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}

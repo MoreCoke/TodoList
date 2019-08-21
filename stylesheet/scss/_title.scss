@@ -1,0 +1,43 @@
+.title {
+  margin: 3rem 0;  
+  background: repeating-linear-gradient(45deg, black, black 20px, #F3F781 20px, #F3F781 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .signal-badge {
+    box-sizing: border-box;
+    width: 15rem;
+    height: 5rem;
+    background-color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    border:5px solid $crucial;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 15px black;
+    color: $crucial;
+    text-align: center;
+    line-height: 5rem;
+  }
+}
+.title-left,.title-right{
+  @media (max-width:576px) {
+    display: none;
+  }
+}
+
+.title-left{
+  position: absolute;
+  left: 0;
+  top: 8rem;
+  bottom: 0;//5rem;
+  background: repeating-linear-gradient(45deg, black, black 20px, #F3F781 20px, #F3F781 40px);
+  width:5rem;
+}
+.title-right{
+  position: absolute;
+  right: 0;
+  top: 8rem;
+  bottom: 0;//5rem;
+  background: repeating-linear-gradient(45deg, black, black 20px, #F3F781 20px, #F3F781 40px);
+  width:5rem;
+}

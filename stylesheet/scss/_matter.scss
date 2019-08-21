@@ -1,0 +1,108 @@
+.matter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .matter-level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 1.75rem 1.25rem;
+    border-radius: 30px;
+    max-width: 15rem;
+    margin: 0.25rem auto;
+  }
+  .matter-list {
+    display: flex;
+    @media(max-width:576px){
+      flex-direction: column;
+      li{
+        margin:0 0 1rem 0;
+      }
+    }
+    li {
+      margin: 1rem 0;
+      font-size: 1.25rem;
+      font-weight: bold;
+      i {
+        margin: 0 0.75rem;
+      }
+    }
+  }
+  label {
+    width:30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .matter-input {
+      width: 85%;
+      outline: none;
+      color: white;
+      font-size: 1.25rem;
+      padding: 1rem 0.25rem;
+      &::placeholder {
+        color: white;
+        font-size: 1.25rem;
+      }
+    }
+    i{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+  }
+}
+.crucial,
+.necessary,
+.trivial {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0 0.5rem;
+  border-radius: 100%;
+  border-color: transparent;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+.crucial {
+  background-color: darken($crucial, 15%);
+  &:hover,&:checked {
+    background-color: $crucial;
+    box-shadow: 0 0 .5rem $crucial;
+  }
+}
+.necessary {
+  background-color: darken($necessary, 15%);
+  &:hover,&:checked {
+    background-color: $necessary;
+    box-shadow: 0 0 .5rem $necessary;
+  }
+}
+.trivial {
+  background-color: darken($trivial, 15%);
+  &:hover,&:checked {
+    background-color: $trivial;
+    box-shadow: 0 0 .5rem  $trivial;
+  }
+}
+.text-crucial {
+  color: $crucial;
+}
+.text-necessary {
+  color: $necessary;
+}
+.text-trivial {
+  color: $trivial;
+}
+
+.bg-crucial{
+  background-color: $crucial;
+}
+.bg-necessary{
+  background-color: $necessary;
+}
+.bg-trivial{
+  background-color: $trivial;
+}

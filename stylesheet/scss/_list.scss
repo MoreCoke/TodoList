@@ -1,0 +1,70 @@
+.list {
+  box-sizing: border-box;
+  background-color: $info; //#27AE60;
+  border: 0.2rem solid white;
+  border-radius: 0.25rem;
+  width: 90%;
+  @media (min-width:576px) {
+      width: 60%;
+  }
+  min-height: 5rem;
+  margin: 0 auto;
+  box-shadow: 0 0 0.1rem 0.5rem $info; //#27AE60;
+  i {
+    cursor: pointer;
+  }
+  li {
+    background: darken($info, 10%);
+  }
+  li:nth-child(2n) {
+    background: lighten($info, 10%);
+  }
+}
+.list-item-crucial,.list-item-necessary,.list-item-trivial{
+  box-sizing: border-box;
+  font-weight: bolder;
+  margin: 1.5rem 2rem;
+  padding: 1rem 0.5rem;
+  &:hover {
+    box-shadow: 0 0.35rem 1.75rem rgba(black, 0.125);
+  }
+}
+
+.list-item-crucial {
+  border-left: 0.4rem solid darken($crucial, 10%);
+  
+}
+.list-item-necessary {
+  border-left: 0.4rem solid darken($necessary, 10%);
+}
+.list-item-trivial {
+  border-left: 0.4rem solid darken($trivial, 10%);
+}
+.list-button {
+  box-sizing: border-box;
+  margin: 1.5rem;
+  background-color: $awesome;
+  border: 0.05rem solid $awesome;
+  border-radius: 0.2rem;
+  padding: 1rem 0.5rem;
+  color: white;
+  font-weight: bold;
+  border-style: none;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+    color: $awesome;
+  }
+}
+.list-text {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.list-item-content{
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0;
+  outline: none;
+  height: 1rem;
+}

@@ -1,0 +1,44 @@
+.warning-divider {
+  background: repeating-linear-gradient(45deg, black, black 20px, #f3f781 20px, #f3f781 40px);
+  height: 0.25rem;
+  margin-bottom: 3rem;
+}
+.w-3 {
+  width: 30%;
+}
+.float-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.done {
+  color: $info;
+  opacity: 1;
+}
+.check,
+.delete {
+  margin-right: 0.5rem;
+}
+.check {
+  background: white;
+}
+.animation-delete {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.3s, opacity 0.3s linear;
+}
+.strikethrough {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 0.25em solid black;
+    top: 50%;
+    left: 0;
+    right: 0;
+  }
+}
+

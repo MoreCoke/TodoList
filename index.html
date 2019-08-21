@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="./stylesheet/all.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700|Open+Sans:400,700|Roboto:400,700,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="title">
+        <div class="signal-badge">TodoList</div>
+    </div>
+    <div class="wrapper">
+        <div class="title-left"></div>
+        <div class="title-right"></div>
+        <div class="matter">
+            <div class="matter-level">
+                <input type="radio" name="matter-light" class="crucial">
+                <input type="radio" name="matter-light" checked class="necessary">
+                <input type="radio" name="matter-light" class="trivial">
+            </div>
+            <ul class="matter-list">
+                <li><i class="fas fa-circle text-crucial"></i><span>重要事情</span></li>
+                <li><i class="fas fa-circle text-necessary"></i><span>日常事項</span></li>
+                <li><i class="fas fa-circle text-trivial"></i><span>生活瑣事</span></li>
+            </ul>
+            <label for="hi">
+                <input id="hi" type="text" class="matter-input" maxlength="25" placeholder="添加任務!">
+                <i class="fas fa-plus"></i>
+            </label>
+            <div class="warning-divider w-3"></div>
+        </div>
+        <ul class="list">
+        </ul>
+        <div class="text-center"><button class="list-button">依照重要程度排列</button></div>
+    </div>
+    <footer class="footer">© MoreCoke 2019. All Rights Reserved.</footer>
+    <script src="https://kit.fontawesome.com/8ed18339f9.js"></script>
+    <script src="./stylesheet/js/all.js"></script>
+</body>
+</html>

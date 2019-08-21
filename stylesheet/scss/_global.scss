@@ -1,0 +1,35 @@
+html{
+    height: 100%;
+}
+body{
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary;
+    color: white;
+    @include body-font;
+}
+input, textarea, button {
+    font-family: inherit;
+}
+input{
+    background-color: transparent;
+    border: none;
+}
+h1,h2,h3,h4,h5,h6{
+    @include head-font;
+}
+.wrapper{
+    flex-grow: 1;
+    padding: 0 5rem;
+    @media (max-width:576px) {
+        padding: 0.5rem;
+    }
+}
+.footer{
+    padding:2rem;
+    background-color: darken($primary,10%);
+    //background: repeating-linear-gradient(45deg, black, black 20px, yellow 20px, yellow 40px);//太花了就沒用了
+    text-align: center;
+}
